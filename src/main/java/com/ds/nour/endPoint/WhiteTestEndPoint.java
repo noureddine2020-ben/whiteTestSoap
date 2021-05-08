@@ -13,17 +13,16 @@ import de.tekup.soap.models.whitetest.WhiteTestResponse;
 
 @Endpoint
 public class WhiteTestEndPoint {
-	
+
 	@Autowired
 	WhiteTestService testService;
-	
-	public static final String nameSpace="http://www.tekup.de/soap/models/whitetest";
-	
-	@PayloadRoot(namespace = nameSpace,localPart = "StudentRequest")
+
+	public static final String nameSpace = "http://www.tekup.de/soap/models/whitetest";
+
+	@PayloadRoot(namespace = nameSpace, localPart = "StudentRequest")
 	@ResponsePayload
-	public WhiteTestResponse getWhiteTest(@RequestPayload StudentRequest studentRequest)
-	{
+	public WhiteTestResponse getWhiteTest(@RequestPayload StudentRequest studentRequest) {
 		return testService.foundWhitetTest(studentRequest);
-				}
+	}
 
 }

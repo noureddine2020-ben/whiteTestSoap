@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.7 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2021.05.01 à 11:00:49 PM CEST 
+// Généré le : 2021.05.08 à 10:37:43 PM WAT 
 //
 
 
@@ -112,21 +112,5 @@ public class Student {
     public void setAddress(String value) {
         this.address = value;
     }
-
-	public Student(int id, String name, String address) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.address = address;
-	}
-
-	
-
-	public Student() {
-		// TODO Auto-generated constructor stub
-	}
-    
-	
-    
 
 }

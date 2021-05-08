@@ -13,8 +13,8 @@ import org.springframework.xml.xsd.XsdSchema;
 
 import com.ds.nour.endPoint.WhiteTestEndPoint;
 
-@Configuration
 @EnableWs
+@Configuration
 public class WhiteTestConfig {
 	
 	@Bean
@@ -34,11 +34,11 @@ public class WhiteTestConfig {
 		return new SimpleXsdSchema(new ClassPathResource("whiteTest.xsd"));
 	}
 	
-	@Bean (name = "WhiteTest")
+	@Bean (name = "whiteTest")
 	public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema schema) {
 		DefaultWsdl11Definition defaultWsdl11Definition = new DefaultWsdl11Definition();
-		defaultWsdl11Definition.setPortTypeName("WhiteTest");
-		defaultWsdl11Definition.setLocationUri("/ws");
+		defaultWsdl11Definition.setPortTypeName("whiteTestIndicator");
+		defaultWsdl11Definition.setLocationUri("http://localhost:8080/ws");
 		defaultWsdl11Definition.setSchema(schema);
 		defaultWsdl11Definition.setTargetNamespace(WhiteTestEndPoint.nameSpace);
 		
