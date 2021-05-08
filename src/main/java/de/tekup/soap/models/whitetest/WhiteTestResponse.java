@@ -2,13 +2,11 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.7 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2021.05.01 à 11:00:49 PM CEST 
+// Généré le : 2021.05.08 à 10:37:43 PM WAT 
 //
 
 
 package de.tekup.soap.models.whitetest;
-
-import java.util.List;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -56,19 +54,8 @@ public class WhiteTestResponse {
     @XmlElement(required = true)
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar date;
-    
-    protected List<String> errorNotFound;
-    
-    
-    public List<String> getErrorNotFound() {
-		return errorNotFound;
-	}
 
-	public void setErrorNotFound(List<String> errorNotFound) {
-		this.errorNotFound = errorNotFound;
-	}
-
-	/**
+    /**
      * Obtient la valeur de la propriété student.
      * 
      * @return
@@ -139,6 +126,5 @@ public class WhiteTestResponse {
     public void setDate(XMLGregorianCalendar value) {
         this.date = value;
     }
-    
-    
+
 }

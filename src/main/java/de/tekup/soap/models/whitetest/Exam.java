@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.7 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2021.05.01 à 11:00:49 PM CEST 
+// Généré le : 2021.05.08 à 10:37:43 PM WAT 
 //
 
 
@@ -93,18 +93,5 @@ public class Exam {
     public void setName(String value) {
         this.name = value;
     }
-
-	public Exam(String code, String name) {
-		super();
-		this.code = code;
-		this.name = name;
-	}
-
-	public Exam() {
-		
-		// TODO Auto-generated constructor stub
-	}
-    
-    
 
 }
